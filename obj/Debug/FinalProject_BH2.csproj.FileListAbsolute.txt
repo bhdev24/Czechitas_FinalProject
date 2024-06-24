@@ -1,0 +1,7 @@
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\bin\Debug\FinalProject_BH2.exe.config
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\bin\Debug\FinalProject_BH2.exe
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\bin\Debug\FinalProject_BH2.pdb
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\obj\Debug\FinalProject_BH2.csproj.AssemblyReference.cache
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\obj\Debug\FinalProject_BH2.csproj.CoreCompileInputs.cache
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\obj\Debug\FinalProject_BH2.exe
+C:\Users\Bara\Desktop\Czechitas\FinalProject\FinalProject_BH2\obj\Debug\FinalProject_BH2.pdb
