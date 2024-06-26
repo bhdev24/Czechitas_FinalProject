@@ -14,13 +14,33 @@ namespace FinalProject_BH2
         {
             List<string> data = new List<string>();
 
-            using (StreamReader sr = new StreamReader(filePath))
+            try
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(filePath))
                 {
-                    data.Add(line);
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        data.Add(line);
+                    }
                 }
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine($"Error: The file at path '{filePath}' was not found.");
+                Console.ReadLine();
+            }
+
+            catch (DirectoryNotFoundException)
+            {
+                Console.WriteLine($"Error: The directory for path '{filePath}' was not found.");
+                Console.ReadLine();
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+                Console.ReadLine();
             }
             return data;
         }
@@ -41,12 +61,14 @@ namespace FinalProject_BH2
             {
                 filePath = projectDirectory + @"\hard.csv";
             }
-            else
-            {
-                //vyjimka;
-            }
 
             List<string> data = LoadCsv(filePath);
+            
+            if (data.Count == 0)
+            {
+                throw new InvalidOperationException("The csv file has invalid data or is empty.");
+            }
+
             Random random = new Random();
             int index = random.Next(data.Count);
             string randomWord = data[index];
