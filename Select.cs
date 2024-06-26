@@ -51,15 +51,15 @@ namespace FinalProject_BH2
             string filePath = "";
             if (difficulty == "easy")
             {
-                filePath = projectDirectory + @"\easy.csv";
+                filePath = projectDirectory + @"\data\easy.csv";
             }
             else if (difficulty == "medium")
             {
-                filePath = projectDirectory + @"\medium.csv";
+                filePath = projectDirectory + @"\data\medium.csv";
             }
             else if (difficulty == "hard")
             {
-                filePath = projectDirectory + @"\hard.csv";
+                filePath = projectDirectory + @"\data\hard.csv";
             }
 
             List<string> data = LoadCsv(filePath);
