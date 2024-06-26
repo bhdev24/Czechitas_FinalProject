@@ -140,6 +140,19 @@ namespace FinalProject_BH2
             }
             return status;
         }
+
+        public static void printStart(int wrong, string Word)
+        {
+            Console.WriteLine($"Statistics: {wrong}/6 lifes");
+            Console.WriteLine("\n+---+");
+            Console.WriteLine("    |");
+            Console.WriteLine("    |");
+            Console.WriteLine("    |");
+            Console.WriteLine("   ===");
+            Console.WriteLine("\n");
+            Print.printLines(Word);
+            Console.WriteLine("\n");
+        }
     }
 
 }
